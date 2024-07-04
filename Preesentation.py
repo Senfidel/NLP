@@ -19,6 +19,7 @@ import openai
 from bertopic.representation import KeyBERTInspired, MaximalMarginalRelevance, OpenAI, PartOfSpeech
 import joblib
 import numpy as np
+import gdown
 
 #import bertopic_base_chinese
 df=pd.read_csv( r'C:\Users\etien\OneDrive\Documents\Master 2\D2SN\Machine learning\Mémoire\Data\df_avec_topics_pays_villes(1).csv')
