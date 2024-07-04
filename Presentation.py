@@ -1,12 +1,3 @@
-import streamlit as st
-import streamlit.components.v1 as components
-import plotly.express as px
-fig = px.box(range(10))
-import pandas as pd
-import bert
-import bertopic
-import glob
-import spacy
 from sentence_transformers import SentenceTransformer
 from bertopic import BERTopic
 from umap import UMAP
@@ -14,8 +5,6 @@ from hdbscan import HDBSCAN
 from sklearn.feature_extraction.text import CountVectorizer
 import openai
 from bertopic.representation import KeyBERTInspired, MaximalMarginalRelevance, OpenAI, PartOfSpeech
-import joblib
-import numpy as np
 import gdown
 
 #import bertopic_base_chinese
