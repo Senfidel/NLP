@@ -5,9 +5,7 @@ fig = px.box(range(10))
 import pandas as pd
 import bert
 import bertopic
-import wos
 import glob
-import wosfile
 import bertviz
 import spacy
 from sentence_transformers import SentenceTransformer
