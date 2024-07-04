@@ -26,13 +26,26 @@ df=pd.read_csv( r'C:\Users\etien\OneDrive\Documents\Master 2\D2SN\Machine learni
 
 text=df[ 'Résumé_translated']
 # Chemin de chargement
-model_load_path = r"C:\Users\etien\OneDrive\Documents\Master 2\D2SN\Machine learning\Mémoire\Data\Bert_Model"
 
-# Charger le modèle BERTopic
-topic_model = joblib.load(f"{model_load_path}/bertopic_model.pkl")
+
+# Télécharger le modèle depuis Google Drive
+@st.cache_resource
+def download_model(url, output):
+    gdown.download(url, output, quiet=False)
+    return output
+
+# URL de téléchargement direct de Google Drive
+url = 'https://drive.google.com/uc?id=1RZio93kAznqrl9BnxbWgh7NVJNEztFuF' 
+
+output = 'bertopic_model.pkl'
+# Chemin du fichier modèle téléchargé
+model_path = download_model(url, output)
+topic_model = joblib.load(model_path)
+
+
 
 # Charger les embeddings
-embeddings = np.load(f"{model_load_path}/embeddings.npy", allow_pickle=True)
+embeddings = np.load(f"{embeddings.npy", allow_pickle=True)
 
 #topic_model = BERTopic.load(r"C:\Users\etien\OneDrive\Documents\Master 2\D2SN\Machine learning\Mémoire\Data\Bert_Model\bertopic_model.pkl", embedding_model="sentence-transformers/all-MiniLM-L6-v2")
 #topic_distr, _ = topic_model.approximate_distribution(text, window=8, stride=4)
