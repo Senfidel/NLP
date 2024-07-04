@@ -43,7 +43,6 @@ topic_model = joblib.load(model_path)
 
 
 # Charger les embeddings
-@st.cache_resource
 embeddings = np.load("embeddings.npy", allow_pickle=True)
 
 #topic_model = BERTopic.load(r"C:\Users\etien\OneDrive\Documents\Master 2\D2SN\Machine learning\Mémoire\Data\Bert_Model\bertopic_model.pkl", embedding_model="sentence-transformers/all-MiniLM-L6-v2")
