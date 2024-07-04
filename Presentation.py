@@ -6,6 +6,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import openai
 from bertopic.representation import KeyBERTInspired, MaximalMarginalRelevance, OpenAI, PartOfSpeech
 import gdown
+import pandas as pd
 
 #import bertopic_base_chinese
 df=pd.read_csv('df_avec_topics_pays_villes(1).csv')
