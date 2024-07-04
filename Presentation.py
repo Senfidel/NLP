@@ -8,6 +8,8 @@ from bertopic.representation import KeyBERTInspired, MaximalMarginalRelevance, O
 import gdown
 import pandas as pd
 import numpy as np
+import streamlit as st
+import plotly.express as px
 
 #import bertopic_base_chinese
 df=pd.read_csv('df_avec_topics_pays_villes(1).csv')
