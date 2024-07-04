@@ -6,7 +6,6 @@ import pandas as pd
 import bert
 import bertopic
 import glob
-import bertviz
 import spacy
 from sentence_transformers import SentenceTransformer
 from bertopic import BERTopic
