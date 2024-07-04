@@ -5,6 +5,6 @@ sentence_transformers
 bertopic
 openai
 hdbscan
-umap
+umap-learn
 gdown
 numpy
