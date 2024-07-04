@@ -7,3 +7,4 @@ openai
 hdbscan
 umap
 gdown
+numpy
